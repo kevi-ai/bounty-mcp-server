@@ -1,0 +1,39 @@
+{
+  "name": "bounty-board-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for AI Bounty Board - enables Claude and other MCP clients to interact with bounties",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "bounty-mcp-server": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "bounty",
+    "claude",
+    "ai-agents",
+    "model-context-protocol"
+  ],
+  "author": "kevi-ai",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevi-ai/bounty-mcp-server"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
